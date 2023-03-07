@@ -1,9 +1,15 @@
 void main(List<String> args) {
   // basics data types
+  num a = 3, b = 3.4;
   int num1 = 10;
   double num2 = 5.0;
   bool booleanA = (num1 + num2) is int; //  "is" is the instance-of operator
-  
+
+  Object number = 10, string = "string";  //  Everything in Dart is an Object
+  dynamic dynamicObj; // dynamic object
+  dynamicObj.name = "Dart";
+  dynamicObj.birthYear = 2011;
+
 
   const String str = "Hello, ";
   var username; // dynamic type

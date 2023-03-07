@@ -24,6 +24,11 @@ void main(List<String> args) {
     // continue
   }
 
+  var list = ['Dart', 'Python', 'Go', 'Rust', 'Java', 'JavaScript', 'C#', 'C/C++'];
+  for(var item in list) {
+    print('for each $item');
+  }
+
   int i = 0;
   while(i < 3) {
     print(i);
