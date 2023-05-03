@@ -7,7 +7,6 @@ void main(List<String> args) {
 
   // arrow function - Arrow functions are useful when passing functions as parameters to other functions.
   String sayHi(String name, int age) => 'Hello, $name - $age years old';
-  var fun = () => 'Hello Dart!';
 
 
   // callback functions - Many APIs in Dart use callback functions, often to handle events or gestures in Flutter.
@@ -16,12 +15,14 @@ void main(List<String> args) {
     return 'Result: $result';
   }
 
+  // anonymous function
+  var fun = () => 'Hello Dart!';
+
   print(hello('Dart'));
   print(namedParams(a: 5, b: 3));
   print(sayHi('dart', 10));
   print(callFun(fun));
 
-  // anonymous function
   var list = ['Dart', 'Python', 'Go', 'Rust', 'Java', 'JavaScript', 'C#', 'C/C++'];
   list.forEach((element) {
     print('${list.indexOf(element)}: $element');  //  list.indexOf(element) -> get index of element
